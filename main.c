@@ -3,20 +3,15 @@
 
 int main()
 {
-   float P,R,T,SI;
+   int a,b,c,greatest;
 
-   printf("ENTER PRINCIPLE AMOUNT: \n");
-   scanf("%f",&P);
+   printf("ENTER THREE NUMBER: \n");
+   scanf("%d %d %d", &a,&b,&
+         c);
 
-   printf("ENTER RATE OF INTREST: \n");
-   scanf("%f",&R);
+   greatest = (a > b && a > c)? a : ((b > c)? b : c);
 
-   printf("ENTER PERIOD OF TIME (IN YEARS): \n");
-   scanf("%f", &T);
-
-   SI = (P*R*T) / 100;
-
-    Printf("SIMPLE INTREST = %.2F \n", SI);
+    printf("greater number is = %d \n" , greatest);
 
     return 0;
 }
